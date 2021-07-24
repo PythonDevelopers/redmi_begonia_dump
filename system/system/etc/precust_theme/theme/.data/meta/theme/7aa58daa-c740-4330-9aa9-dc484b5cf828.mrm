@@ -1,0 +1,136 @@
+{
+  "localId": "7aa58daa-c740-4330-9aa9-dc484b5cf828",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "1e0b5e9216e447cd7b0555f8266febeb3f73e723",
+  "platform": 10,
+  "size": 8608866,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "designers": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "titles": {
+    "zh_TW": "幻象",
+    "en_US": "Illusion",
+    "vi_VN": "Ảo giác",
+    "pt_PT": "Ilusão",
+    "pt_BR": "Ilusão",
+    "it_IT": "Illusione",
+	"ru_RU": "Иллюзия",
+	"uk_UA": "Ілюзія",
+	"be_BY": "Iлюзія"
+  },
+  "descriptions": {},
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_lockscreen_0.jpg",
+      "preview_launcher_0.jpg",
+      "preview_launcher_1.jpg",
+      "preview_statusbar_0.jpg",
+      "preview_statusbar_1.jpg",
+      "preview_contact_0.jpg",
+      "preview_mms_0.jpg",
+      "preview_mms_1.jpg",
+      "preview_icons_small_0.jpg",
+      "preview_icons_0.jpg"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_lockscreen_0.jpg",
+      "preview_launcher_0.jpg",
+      "preview_launcher_1.jpg",
+      "preview_statusbar_0.jpg",
+      "preview_statusbar_1.jpg",
+      "preview_contact_0.jpg",
+      "preview_mms_0.jpg",
+      "preview_mms_1.jpg",
+      "preview_icons_0.jpg"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [],
+  "subResources": [
+    {
+      "localId": "w906a5b8-v759-96e3-32cd-8f40dfdd1967",
+      "resourceCode": "launcher",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "c1607bf3-72be-4dd4-b20c-0cad4ef8d94c",
+      "resourceCode": "com.miui.gallery",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "38a4295b-acb7-4eb1-913c-da3fdd43c694",
+      "resourceCode": "com.miui.touchassistant",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "zm4opvc9-bcd3-8475-87b6-7ec82ce409n2",
+      "resourceCode": "statusbar",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "z8nn1758-9026-4167-9d7a-e2c0a03cdmvg",
+      "resourceCode": "contact",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "z8n2166f-fddb-468f-9e46-97b4c6757fvj",
+      "resourceCode": "mms",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "1c25ffdf-6478-4773-9f2c-c654eb5e3b9e",
+      "resourceCode": "icons",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "94982b40-0f19-41a7-a075-4b4e9be938f3",
+      "resourceCode": "framework-miui-res",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "f2c5cf85-22b5-4dbb-8c56-50c0bc5e37a7",
+      "resourceCode": "lockscreen",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "f2c5cf85-22b5-4dbb-8c56-50c0bc5e37a7",
+      "resourceCode": "wallpaper",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": null
+}

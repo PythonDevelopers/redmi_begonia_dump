@@ -1,0 +1,58 @@
+{
+  "localId": "90n2166f-fddb-468f-9e46-97b4c6859cdf",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "094029d266a1fca4b953980aeaeca69f0cb13b34",
+  "platform": 10,
+  "size": 149227,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "designers": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "titles": {
+    "zh_CN": "轻奢",
+    "bo_CN": "རྒྱས་སྤྲོས་ཅུང་ཙམ།",
+    "zh_TW": "輕奢",
+    "ug_CN": "پوزۇر",
+    "en_US": "Square",
+    "vi_VN": "Hình vuông",
+	"ru_RU": "Квадратная",
+	"uk_UA": "Квадратна",
+	"be_BY": "Квадратная"
+  },
+  "descriptions": {},
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_mms_0.jpg",
+      "preview_mms_1.jpg"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_mms_0.jpg",
+      "preview_mms_1.jpg"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "da9c5438-e95b-41f8-af80-e6f4f2264ab4",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": null
+}

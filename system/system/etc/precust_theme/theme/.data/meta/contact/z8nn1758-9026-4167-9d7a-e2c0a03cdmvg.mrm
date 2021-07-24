@@ -1,0 +1,53 @@
+{
+  "localId": "z8nn1758-9026-4167-9d7a-e2c0a03cdmvg",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "x6548b6f1e725b0a8f7bc032ae1574b9d7b132c9",
+  "platform": 10,
+  "size": 374409,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "designers": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "titles": {
+    "zh_TW": "幻象",
+    "en_US": "Illusion",
+    "vi_VN": "Ảo giác",
+	"ru_RU": "Иллюзия",
+	"uk_UA": "Ілюзія",
+	"be_BY": "Iлюзія"
+  },
+  "descriptions": {},
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_contact_0.jpg"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_contact_0.jpg"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "7aa58daa-c740-4330-9aa9-dc484b5cf828",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": null
+}

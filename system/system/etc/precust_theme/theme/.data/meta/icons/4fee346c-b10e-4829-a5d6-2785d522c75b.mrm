@@ -1,0 +1,55 @@
+{
+  "localId": "4fee346c-b10e-4829-a5d6-2785d522c75b",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "10d5d1fa6c17ddde6871d682c4de576a21d7eea0",
+  "platform": 10,
+  "size": 2271296,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "designers": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "titles": {
+    "zh_TW": "灰烬",
+    "en_US": "Ashes",
+    "vi_VN": "Tro tàn",
+	"ru_RU": "Пепел",
+	"uk_UA": "Попіл",
+	"be_BY": "Попел"
+  },
+  "descriptions": {},
+  "builtInThumbnails": {						
+    "fallback": [
+      "preview_icons_small_0.jpg",
+      "preview_icons_0.jpg"
+	]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_launcher_0.jpg",
+      "preview_icons_0.jpg"
+	]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "65d586e3-8271-44cc-ad89-a48eb8f4a0b3",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": null
+}

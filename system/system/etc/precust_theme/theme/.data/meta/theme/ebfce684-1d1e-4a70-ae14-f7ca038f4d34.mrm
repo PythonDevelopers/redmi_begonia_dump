@@ -1,0 +1,137 @@
+{
+  "localId": "ebfce684-1d1e-4a70-ae14-f7ca038f4d34",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "0a5ac36e7859a7f391352847ac72f2b145fd2162",
+  "platform": 10,
+  "size": 5012835,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "designers": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "titles": {
+    "zh_CN": "山",
+    "zh_TW": "山",
+    "en_US": "Mountain",
+    "vi_VN": "Ngọn núi",
+    "pt_BR": "Montanha",
+    "pt_PT": "Montanha",
+    "it_IT": "Montagna",
+	"ru_RU": "Гора",
+	"uk_UA": "Гора",
+	"be_BY": "Гара"
+ },
+  "descriptions": {},
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_lockscreen_0.jpg",
+      "preview_launcher_0.jpg",
+      "preview_launcher_1.jpg",
+      "preview_statusbar_0.jpg",
+      "preview_statusbar_1.jpg",
+      "preview_contact_0.jpg",
+      "preview_mms_0.jpg",
+      "preview_mms_1.jpg",
+      "preview_icons_small_0.jpg",
+      "preview_icons_0.jpg"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_lockscreen_0.jpg",
+      "preview_launcher_0.jpg",
+      "preview_launcher_1.jpg",
+      "preview_statusbar_0.jpg",
+      "preview_statusbar_1.jpg",
+      "preview_contact_0.jpg",
+      "preview_mms_0.jpg",
+      "preview_mms_1.jpg",
+      "preview_icons_0.jpg"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [],
+  "subResources": [
+    {
+      "localId": "n808a5b8-e248-47e3-87cd-3c20dfdd5637",
+      "resourceCode": "launcher",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "k1607bf3-72be-4dd4-b20c-0cad4ef8d94c",
+      "resourceCode": "com.miui.gallery",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "99b4295b-acb7-4eb1-913c-da3fdd43c694",
+      "resourceCode": "com.miui.touchassistant",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "jp5opvc9-bcd3-4374-87b6-7ec82ce877c8",
+      "resourceCode": "statusbar",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "p5835635-5fb0-4771-a7da-9f2b06516b34",
+      "resourceCode": "lockscreen",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "p5835635-5fb0-4771-a7da-9f2b06516b34",
+      "resourceCode": "wallpaper",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "68da17be-56be-4f12-a4cc-8b63132f6256",
+      "resourceCode": "contact",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "61n9166f-fddb-468f-9e46-97b4c6859cdf",
+      "resourceCode": "mms",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "13457b40-0f19-41a7-a075-4b4e9be938f3",
+      "resourceCode": "framework-miui-res",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "zf170da7-ccc3-4acd-b824-522c1b4c469x",
+      "resourceCode": "icons",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": null
+}

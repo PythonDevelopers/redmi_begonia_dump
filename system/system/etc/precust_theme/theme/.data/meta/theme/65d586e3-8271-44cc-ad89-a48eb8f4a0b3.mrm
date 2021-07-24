@@ -1,0 +1,136 @@
+{
+  "localId": "65d586e3-8271-44cc-ad89-a48eb8f4a0b3",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "2eec7a92bfbcf57feece87343cf9e3257125883f",
+  "platform": 10,
+  "size": 16525989,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "designers": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "titles": {
+    "zh_TW": "灰烬",
+    "en_US": "Ashes",
+    "vi_VN": "Tro tàn",
+    "pt_BR": "Cinzas",
+    "pt_PT": "Cinzas",
+    "it_IT": "Ceneri",
+	"ru_RU": "Пепел",
+	"uk_UA": "Попіл",
+	"be_BY": "Попел"
+ },
+  "descriptions": {},
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_lockscreen_0.jpg",
+      "preview_launcher_0.jpg",
+      "preview_launcher_1.jpg",
+      "preview_statusbar_0.jpg",
+      "preview_statusbar_1.jpg",
+      "preview_contact_0.jpg",
+      "preview_mms_0.jpg",
+      "preview_mms_1.jpg",
+      "preview_icons_small_0.jpg",
+      "preview_icons_0.jpg"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_lockscreen_0.jpg",
+      "preview_launcher_0.jpg",
+      "preview_launcher_1.jpg",
+      "preview_statusbar_0.jpg",
+      "preview_statusbar_1.jpg",
+      "preview_contact_0.jpg",
+      "preview_mms_0.jpg",
+      "preview_mms_1.jpg",
+      "preview_icons_0.jpg"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [],
+  "subResources": [
+    {
+      "localId": "m5320671-5fb0-4771-a7da-9f2b06513ngf",
+      "resourceCode": "lockscreen",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "e1607bf3-72be-4dd4-b20c-0cad4ef8d94c",
+      "resourceCode": "com.miui.gallery",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "58a4295b-acb7-4eb1-913c-da3fdd43c694",
+      "resourceCode": "com.miui.touchassistant",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "m5320671-5fb0-4771-a7da-9f2b06513ngf",
+      "resourceCode": "wallpaper",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "d1q40f7b-88e3-4f2f-b157-a8937d4216ce",
+      "resourceCode": "launcher",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "b1e40f7b-88e3-4f2f-b157-a8937d7447ce",
+      "resourceCode": "statusbar",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "37d6d5e9-4987-41f9-be83-08c91ee85b5d",
+      "resourceCode": "contact",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "fde7f6b6-af2c-4a08-8dad-b2b46ac0c3dc",
+      "resourceCode": "mms",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "96999b40-0f19-41a7-a075-4b4e9be938f3",
+      "resourceCode": "framework-miui-res",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "4fee346c-b10e-4829-a5d6-2785d522c75b",
+      "resourceCode": "icons",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": null
+}

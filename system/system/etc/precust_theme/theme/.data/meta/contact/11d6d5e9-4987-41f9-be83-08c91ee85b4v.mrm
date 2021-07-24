@@ -1,0 +1,55 @@
+{
+  "localId": "11d6d5e9-4987-41f9-be83-08c91ee85b4v",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "vff466a750f574d1563452f55e8f751f042649ee",
+  "platform": 10,
+  "size": 88143,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "designers": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "titles": {
+    "zh_TW": "火星",
+    "zh_HK": "火星",
+    "en_US": "Mars",
+    "vi_VN": "Sao hỏa",
+    "zh_CN": "火星",
+	"ru_RU": "Марс",
+	"uk_UA": "Марс",
+	"be_BY": "Марс"
+  },
+  "descriptions": {},
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_contact_0.jpg"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_contact_0.jpg"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "29a47ae3-765a-406b-acfc-c4a664e0fe05",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": null
+}

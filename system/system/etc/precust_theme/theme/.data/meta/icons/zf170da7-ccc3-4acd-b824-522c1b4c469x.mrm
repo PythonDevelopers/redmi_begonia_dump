@@ -1,0 +1,56 @@
+{
+  "localId": "zf170da7-ccc3-4acd-b824-522c1b4c469x",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "10d5d1fa6c17ddde6871d682c4de576a21d7eea0",
+  "platform": 10,
+  "size": 2271296,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "designers": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "titles": {
+    "zh_CN": "山",
+    "zh_TW": "山",
+    "en_US": "Mountain",
+    "vi_VN": "Ngọn núi",
+	"ru_RU": "Гора",
+	"uk_UA": "Гора",
+	"be_BY": "Гара"
+  },
+  "descriptions": {},
+  "builtInThumbnails": {						
+    "fallback": [
+      "preview_icons_small_0.jpg",
+      "preview_icons_0.jpg"
+	]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_launcher_0.jpg",
+      "preview_icons_0.jpg"
+	]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "ebfce684-1d1e-4a70-ae14-f7ca038f4d34",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": null
+}

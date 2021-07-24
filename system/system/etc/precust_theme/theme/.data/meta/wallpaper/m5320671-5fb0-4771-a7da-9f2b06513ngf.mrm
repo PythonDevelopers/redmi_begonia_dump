@@ -1,0 +1,51 @@
+{
+  "localId": "m5320671-5fb0-4771-a7da-9f2b06513ngf",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "b8dcd3401450b279a7d6b08a2429568c0d4b3159",
+  "platform": 10,
+  "size": 13367,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "designers": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "titles": {
+    "zh_TW": "蓝",
+    "en_US": "Blue",
+    "vi_VN": "Xanh lam",
+	"ru_RU": "Синяя",
+	"uk_UA": "Синя",
+	"be_BY": "Сіняя"
+  },
+  "descriptions": {},
+  "builtInThumbnails": {
+    "en_US": [],
+    "fallback": []
+  },
+  "builtInPreviews": {
+    "en_US": [],
+    "fallback": []
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "65d586e3-8271-44cc-ad89-a48eb8f4a0b3",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": null
+}

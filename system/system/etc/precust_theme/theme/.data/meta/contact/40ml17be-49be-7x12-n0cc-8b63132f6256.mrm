@@ -1,0 +1,56 @@
+{
+  "localId": "40ml17be-49be-7x12-n0cc-8b63132f6256",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "cj008b6f1e725b0a8f7bc785ae1574b9d7b132c9",
+  "platform": 10,
+  "size": 374410,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "designers": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "titles": {
+    "zh_TW": "無界",
+    "bo_CN": "མཚམས་མེད།",
+    "zh_CN": "无界",
+	"ug_CN": "چەكسىز",
+    "en_US": "Limitless",
+    "vi_VN": "Không giới hạn",
+	"ru_RU": "Безграничная",
+	"uk_UA": "Безмежна",
+	"be_BY": "Бязмежная"
+  },
+  "descriptions": {},
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_contact_0.jpg"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_contact_0.jpg"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "84ad7585-2855-494c-aa45-2e783dbe8b39",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": null
+}

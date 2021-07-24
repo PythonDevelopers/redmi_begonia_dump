@@ -1,0 +1,56 @@
+{
+  "localId": "cf7opvc9-bcd3-4374-87b6-7ec82ce855b6",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "4799daf183ba5a53850bc5b1ad8374471f926b13",
+  "platform": 10,
+  "size": 90257,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "designers": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "titles": {
+    "zh_CN": "六角形",
+    "zh_TW": "六角形",
+    "en_US": "Hexagon",
+    "vi_VN": "Lục giác",
+	"ru_RU": "Шестиугольная",
+	"uk_UA": "Шестикутна",
+	"be_BY": "Шасцікутная"
+  },
+  "descriptions": {},
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_statusbar_0.jpg",
+      "preview_statusbar_1.jpg"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_statusbar_0.jpg",
+      "preview_statusbar_1.jpg"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "cfd320b2-e40f-42b1-91db-1ca8e9394352",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": null
+}

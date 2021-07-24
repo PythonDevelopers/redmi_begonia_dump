@@ -1,0 +1,55 @@
+{
+  "localId": "ww123da7-ccc3-4acd-b824-522c1b4c5678",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "70d5d1fa6c17ddde6871d682c4de576a21d7eea0",
+  "platform": 10,
+  "size": 227124,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "designers": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "titles": {
+    "zh_TW": "衝浪",
+    "en_US": "Surf",
+    "vi_VN": "Lướt sóng",
+	"ru_RU": "Прибой",
+	"uk_UA": "Прибою",
+	"be_BY": "Прыбой"
+  },
+  "descriptions": {},
+  "builtInThumbnails": {						
+    "fallback": [
+      "preview_icons_small_0.jpg",
+      "preview_icons_0.jpg"
+	]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_launcher_0.jpg",
+      "preview_icons_0.jpg"
+	]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "bdd39b4b-29dd-48ee-bcb4-1bbc5059aebc",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": null
+}

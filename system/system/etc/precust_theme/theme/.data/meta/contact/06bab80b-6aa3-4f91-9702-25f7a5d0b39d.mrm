@@ -1,0 +1,54 @@
+{
+  "localId": "06bab80b-6aa3-4f91-9702-25f7a5d0b39d",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "264466a750f574d1563452f55e8f751f042649ee",
+  "platform": 10,
+  "size": 88143,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "designers": {
+    "fallback": "Ichigo Kywrosaki"
+  },
+  "titles": {
+    "zh_CN": "质感",
+    "zh_TW": "质感",
+    "en_US": "Texture",
+    "vi_VN": "Kết cấu",
+	"ru_RU": "Текстура",
+	"uk_UA": "Текстура",
+	"be_BY": "Тэкстура"
+  },
+  "descriptions": {},
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_contact_0.jpg"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_contact_0.jpg"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "d5fd2b45-8331-43e8-b203-f0cb6cdd7ba6",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": null
+}

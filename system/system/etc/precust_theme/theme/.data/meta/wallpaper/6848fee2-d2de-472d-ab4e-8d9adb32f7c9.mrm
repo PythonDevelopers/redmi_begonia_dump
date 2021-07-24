@@ -1,0 +1,53 @@
+{
+  "localId": "6848fee2-d2de-472d-ab4e-8d9adb32f7c9",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "73a429725db08988d510223a7d1a8f57e29c0484",
+  "platform": 10,
+  "size": 40613,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "fallback": "MIUI"
+  },
+  "designers": {
+    "fallback": "MIUI"
+  },
+  "titles": {
+    "zh_TW": "火星",
+    "zh_HK": "火星",
+    "en_US": "Mars",
+    "vi_VN": "Sao hỏa",
+    "zh_CN": "火星",
+	"ru_RU": "Марс",
+	"uk_UA": "Марс",
+	"be_BY": "Марс"
+  },
+  "descriptions": {},
+  "builtInThumbnails": {
+    "en_US": [],
+    "fallback": []
+  },
+  "builtInPreviews": {
+    "en_US": [],
+    "fallback": []
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "29a47ae3-765a-406b-acfc-c4a664e0fe05",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": null
+}
