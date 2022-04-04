@@ -1,0 +1,124 @@
+on boot && property:ro.boot.selinux=permissive
+  # prevent SafetyNet to check selinux state
+  chmod 0640 /sys/fs/selinux/enforce
+  chmod 0440 /sys/fs/selinux/policy
+
+on boot
+  stop console
+
+  # reset sensitive props to hide from root checks
+  exec u:r:su:s0 -- /bin/setprop2 ro.debuggable 0
+  exec u:r:su:s0 -- /bin/setprop2 ro.secure 1
+  exec u:r:su:s0 -- /bin/setprop2 ro.build.type user
+  exec u:r:su:s0 -- /bin/setprop2 ro.build.tags release-keys
+  exec u:r:su:s0 -- /bin/setprop2 ro.boot.selinux enforcing
+  exec u:r:su:s0 -- /bin/setprop2 --delete ro.build.selinux
+  exec u:r:su:s0 -- /bin/setprop2 ro.boot.verifiedbootstate green
+  exec u:r:su:s0 -- /bin/setprop2 ro.boot.flash.locked 1
+  exec u:r:su:s0 -- /bin/setprop2 ro.boot.hwc GL
+  exec u:r:su:s0 -- /bin/setprop2 ro.build.fingerprint Redmi/begonia/begonia:11/RP1A.200720.011/V12.5.7.0.RGGMIXM:user/release-keys
+  #exec u:r:su:s0 -- /bin/setprop2 ro.build.version.security_patch 2022-01-01
+  exec u:r:su:s0 -- /bin/setprop2 ro.build.description "begonia-user 11 RP1A.200720.011 V12.5.7.0.RGGMIXM release-keys"
+  #exec u:r:su:s0 -- /bin/setprop2 ro.build.version.incremental V12.5.7.0.RGGMIXM
+  exec u:r:su:s0 -- /bin/setprop2 ro.build.display.id RP1A.200720.011
+  exec u:r:su:s0 -- /bin/setprop2 ro.build.id RP1A.200720.011
+  exec u:r:su:s0 -- /bin/setprop2 ro.product.name begonia
+  exec u:r:su:s0 -- /bin/setprop2 ro.build.flavor begonia-user
+  exec u:r:su:s0 -- /bin/mount --bind /dev/null /bin/setprop2
+
+  # performance
+  exec u:r:su:s0 -- /bin/sh -c "echo 500000 >/sys/devices/system/cpu/cpufreq/schedutil/down_rate_limit_us"
+
+  chown system wifi /dev/rfkill
+
+  exec u:r:su:s0 -- /bin/mount --bind /system/lib/libstagefright_bufferqueue_helper.so /apex/com.android.vndk.v30/lib/libstagefright_bufferqueue_helper.so
+
+  exec u:r:su:s0 -- /bin/setprop persist.sys.pixelprops.streaming 0
+  #exec u:r:su:s0 -- /bin/setprop persist.logging.selinux 2
+
+on init
+  # wifi hotspot required
+  exec u:r:su:s0 -- /bin/insmod /system/lib/modules/ipt_rpfilter.ko
+  exec u:r:su:s0 -- /bin/insmod /system/lib/modules/rfkill.ko
+  exec u:r:su:s0 -- /bin/insmod /system/lib/modules/xt_HL.ko
+  # netd required
+  exec u:r:su:s0 -- /bin/insmod /system/lib/modules/nf_nat_ipv6.ko
+  exec u:r:su:s0 -- /bin/insmod /system/lib/modules/ip6table_nat.ko
+
+  exec u:r:su:s0 -- /bin/insmod /system/lib/modules/vibrator.ko
+
+  # f2fs
+  exec u:r:su:s0 -- /bin/insmod /system/lib/modules/crc32_generic.ko
+  exec u:r:su:s0 -- /bin/insmod /system/lib/modules/f2fs.ko
+
+  mkdir /dev/tmp 644
+  exec u:r:su:s0 -- /bin/cp --preserve=all /vendor/firmware/wifi.cfg /dev/tmp/wifi.cfg
+  exec u:r:su:s0 -- /bin/sh -c "echo '' >>/dev/tmp/wifi.cfg"
+  exec u:r:su:s0 -- /bin/sh -c "echo 'Sta2gBw 1' >>/dev/tmp/wifi.cfg"
+  #exec u:r:su:s0 -- /bin/sh -c "echo 'P2p2gBw 1' >>/dev/tmp/wifi.cfg"
+  #exec u:r:su:s0 -- /bin/sh -c "echo 'KeepFullPwr 1' >>/dev/tmp/wifi.cfg"
+
+  trigger bind-overrides
+
+on post-fs-data
+  trigger bind-overrides
+
+on bind-overrides && property:persist.vendor.wlan.2g40mhz=1
+  exec u:r:su:s0 -- /bin/mount --bind /dev/tmp/wifi.cfg /vendor/firmware/wifi.cfg
+
+on property:persist.vendor.mtk_aurisys_framework_support=*
+  stop audioserver
+  start audioserver
+
+on property:sys.boot_completed=1 && property:persist.system_root.writable=1
+  exec u:r:su:s0 -- /bin/mount -o rw,remount /
+
+on property:persist.logging.enabled=1
+  exec_background u:r:su:s0 -- /bin/sh -c "dmesg >/cache/dmesg.log"
+  exec_background u:r:su:s0 -- /bin/sh -c "logcat >/cache/logcat.log"
+  exec_background u:r:su:s0 -- /bin/sh -c "logcat -b radio >/cache/radio.log"
+
+on property:persist.logging.selinux=1
+  exec_background u:r:su:s0 -- /bin/sh -c "logcat | grep 'avc: *denied' >/cache/selinux.log"
+#on property:persist.logging.selinux=2
+#  exec_background u:r:su:s0 -- /bin/sh -c "logcat | grep 'avc: *denied' >/cache/selinux.log"
+
+on property:sys.boot_completed=1 && property:persist.bufferfix.enabled=1
+  stop camerahalserver
+  exec u:r:su:s0 -- /bin/mount --bind /system/lib64/libmtkcam_3rdparty.customer.so /vendor/lib64/libmtkcam_3rdparty.customer.so
+  exec u:r:su:s0 -- /bin/mount --bind /system/lib64/libmtkcam_featurepolicy.so /vendor/lib64/libmtkcam_featurepolicy.so
+  start camerahalserver
+
+on property:sys.boot_completed=1 && property:persist.bufferfix.enabled=0
+  stop camerahalserver
+  umount /vendor/lib64/libmtkcam_3rdparty.customer.so
+  umount /vendor/lib64/libmtkcam_featurepolicy.so
+  start camerahalserver
+
+on property:vendor.touch.dt2w.enabled=1
+  exec u:r:su:s0 -- /bin/sendevent /dev/input/event2 0 1 5
+  exec u:r:su:s0 -- /bin/sendevent /dev/input/event2 0 0 0
+
+on property:vendor.touch.dt2w.enabled=0
+  exec u:r:su:s0 -- /bin/sendevent /dev/input/event2 0 1 4
+  exec u:r:su:s0 -- /bin/sendevent /dev/input/event2 0 0 0
+
+on property:sys.boot_completed=1
+  exec u:r:su:s0 -- /bin/sh -c "[ -f /data/backup_restored ] && { rm /data/backup_restored; killall system_server; }"
+
+service pq-2-2 /bin/sleep 12345d
+  disabled
+
+service displayfeature-hal-1-0 /bin/sleep 12345d
+  disabled
+
+service vendor.vibrator-1-0 /bin/sleep 12345d
+  disabled
+
+service vendor.mtk.vibrator-1-2 /bin/sleep 12345d
+  disabled
+
+service init-opencamera /bin/sh /system/product/app/OpenCamera/bin/init.sh
+  class main
+  oneshot
+  seclabel u:r:su:s0
