@@ -1,0 +1,9 @@
+Protocol 2
+HostKey /data/ssh/ssh_host_rsa_key
+HostKey /data/ssh/ssh_host_dsa_key
+AuthorizedKeysFile /data/ssh/authorized_keys
+PasswordAuthentication no
+StrictModes no
+PrintMotd no
+PrintLastLog no
+Subsystem sftp internal-sftp -u 0022

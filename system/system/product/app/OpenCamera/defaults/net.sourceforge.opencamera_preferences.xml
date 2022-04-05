@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="preference_camera_api">preference_camera_api_camera2</string>
+    <boolean name="preference_camera2_fake_flash" value="false" />
+    <boolean name="preference_location" value="true" />
+    <boolean name="preference_startup_focus" value="false" />
+    <string name="preference_video_fps">60</string>
+</map>

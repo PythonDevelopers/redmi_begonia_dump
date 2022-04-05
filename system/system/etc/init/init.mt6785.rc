@@ -1,0 +1,106 @@
+on boot
+  stop console
+
+  # reset sensitive props to hide from root checks
+  exec -- /bin/setprop2 ro.debuggable 0
+  exec -- /bin/setprop2 ro.secure 1
+  exec -- /bin/setprop2 ro.build.type user
+  exec -- /bin/setprop2 ro.build.tags release-keys
+  exec -- /bin/setprop2 ro.boot.selinux enforcing
+  exec -- /bin/setprop2 --delete ro.build.selinux
+  exec -- /bin/setprop2 ro.boot.verifiedbootstate green
+  exec -- /bin/setprop2 ro.boot.flash.locked 1
+  exec -- /bin/setprop2 ro.boot.hwc GL
+  mount none /dev/null /bin/setprop2 bind
+
+  # prevent SafetyNet to check selinux state
+  chmod 0640 /sys/fs/selinux/enforce
+  chmod 0440 /sys/fs/selinux/policy
+
+  # performance
+  write /sys/devices/system/cpu/cpufreq/schedutil/down_rate_limit_us 500000
+
+  chown system wifi /dev/rfkill
+
+  # led flash
+  chown system system /sys/class/leds/flash-light0/brightness
+  chmod 0664 /sys/class/leds/flash-light0/brightness
+
+on init
+  # wifi hotspot required
+  insmod /system/lib/modules/ipt_rpfilter.ko
+  insmod /system/lib/modules/rfkill.ko
+  insmod /system/lib/modules/xt_HL.ko
+  # netd required
+  insmod /system/lib/modules/nf_nat_ipv6.ko
+  insmod /system/lib/modules/ip6table_nat.ko
+
+  insmod /system/lib/modules/vibrator.ko
+
+  #export TREBLE_TESTING_OVERRIDE true
+
+  mkdir /dev/empty
+  mkdir /dev/tmp
+  copy /vendor/lib64/libmtk-ril.so /dev/tmp/libmtk-ril.so
+  chmod 0644 /dev/tmp/libmtk-ril.so
+  exec -- /bin/sed -i -e "s/AT+EAIC=2/AT+EAIC=3/g" /dev/tmp/libmtk-ril.so
+  copy /vendor/firmware/wifi.cfg /dev/tmp/wifi.cfg
+  chmod 0644 /dev/tmp/wifi.cfg
+  exec -- /bin/sh -c "echo '' >>/dev/tmp/wifi.cfg"
+  exec -- /bin/sh -c "echo 'Sta2gBw 1' >>/dev/tmp/wifi.cfg"
+  #exec -- /bin/sh -c "echo 'P2p2gBw 1' >>/dev/tmp/wifi.cfg"
+  #exec -- /bin/sh -c "echo 'KeepFullPwr 1' >>/dev/tmp/wifi.cfg"
+
+  trigger bind-overrides
+
+on post-fs-data
+  trigger bind-overrides
+
+on bind-overrides
+  mount none /dev/empty /vendor/overlay bind
+  mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
+  mount none /system/etc/audio_effects.xml /vendor/etc/audio_effects.xml bind
+  mount none /system/etc/libnfc-nxp.conf /vendor/etc/libnfc-nxp.conf bind
+  mount none /system/etc/media_profiles_V1_0.xml /vendor/etc/media_profiles_V1_0.xml bind
+  mount none /dev/tmp/libmtk-ril.so /vendor/lib64/libmtk-ril.so bind
+  mount none /dev/tmp/wifi.cfg /vendor/firmware/wifi.cfg bind
+
+on bind-overrides && property:ro.boot.hwc=India
+  mount none /system/etc/manifest_nonfc.xml /vendor/etc/vintf/manifest.xml bind
+  mount none /dev/empty /system/app/SecureElement bind
+  mount none /dev/empty /system/system_ext/app/NQNfcNci bind
+  mount none /dev/null /system/etc/vintf/manifest/vendor.nxp.hardware.nfc@2.0-service.xml bind
+  mount none /dev/null /system/etc/permissions/android.software.nfc.beam.xml bind
+  mount none /dev/null /system/etc/permissions/com.android.nfc_extras.xml bind
+  mount none /dev/null /system/system_ext/etc/permissions/com.nxp.nfc.nq.xml bind
+  mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.xml bind
+  mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.ese.xml bind
+  mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.hce.xml bind
+  mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.hcef.xml bind
+  mount none /dev/null /vendor/etc/permissions/android.hardware.se.omapi.ese.xml bind
+  mount none /dev/null /vendor/etc/permissions/android.hardware.se.omapi.uicc.xml bind
+  mount none /dev/null /vendor/etc/permissions/com.android.nfc_extras.xml bind
+  mount none /dev/null /vendor/etc/permissions/com.nxp.mifare.xml bind
+
+on property:persist.vendor.mtk_aurisys_framework_support=*
+  stop audioserver
+  start audioserver
+
+on property:persist.config.media_vol_steps=*
+  setprop ro.config.media_vol_steps ${persist.config.media_vol_steps}
+
+on property:sys.boot_completed=1
+  #exec -- /bin/mount -o rw,remount /
+
+service nqnfc_1_1_hal_service /system/bin/sleep 12345d
+  disabled
+
+service pq-2-2 /system/bin/sleep 12345d
+  disabled
+
+service displayfeature-hal-1-0 /system/bin/sleep 12345d
+  disabled
+
+service init-opencamera /system/bin/sh /system/product/app/OpenCamera/bin/init.sh
+  class main
+  oneshot

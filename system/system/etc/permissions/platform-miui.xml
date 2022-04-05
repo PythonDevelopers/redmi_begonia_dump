@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="gson.jar"
+        file="/system/framework/libgson.jar" />
+    <library name="cloud-common.jar"
+        file="/system/framework/libcloud-common-runtime.jar"
+        dependency="org.apache.http.legacy" />
+    <library name="zxing.jar"
+        file="/system/framework/libzxing.jar" />
+    <library name="volley.jar"
+        file="/system/framework/libvolley.jar" />
+</permissions>

@@ -1,0 +1,8 @@
+#!/system/bin/sh
+ev=/dev/input/event2
+# sanitize
+[[ $1 == 1 || $1 == 0 ]] || (echo >&2 "value must be either 1 or 0. exiting";exit 1)
+# emulate goodix_switch_mode_work(dev, EV_SYN, SYN_CONFIG, 1)
+sendevent $ev 0 1 $(($1+4))
+# commit
+sendevent $ev 0 0 0
